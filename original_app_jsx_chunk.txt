@@ -1,0 +1,2 @@
+"  // Snippet library\n  const [showSnippets, setShowSnippets] = useState(true);\n\n  // Column mapping\n  const [targetColumn, setTargetColumn] = useState('value');\n\n  // --- NEW: Analysis data ---\n  const [residuals, setResiduals] = useState(null);\n 
+<truncated 361 bytes>

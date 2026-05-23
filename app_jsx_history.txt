@@ -1,0 +1,27 @@
+
+=== STEP 97 ===
+"\"import React, { useState } from 'react';\\nimport MenuBar from './components/MenuBar';\\nimport Toolbar from './components/Toolbar';\\nimport EditorPane from './components/EditorPane';\\nimport TelemetryPane from './components/TelemetryPane';\\nimport Subsetti\n<truncated 3734 bytes>"
+
+=== STEP 133 ===
+"\"  const loadSynthetic = (type = 'sine') => {\\n    const synData = generateSyntheticData(100, type);\\n    handleDataLoad(synData, `Loaded synthetic ${type} data with noise.`);\\n  };\""
+
+=== STEP 144 ===
+"[{\"AllowMultiple\":false,\"EndLine\":21,\"ReplacementContent\":\"  const [startIndex, setStartIndex] = useState(0);\\n  const [endIndex, setEndIndex] = useState(0);\\n\\n  const addLog = (msg) => {\\n    setLogs(prev => {\\n      const newLogs = [...prev, msg];\\n    \n<truncated 2683 bytes>"
+
+=== STEP 193 ===
+"\"      return newLogs.slice(-5); // Keep only last 5 logs\\n    });\""
+
+=== STEP 456 ===
+"[{\"AllowMultiple\":false,\"EndLine\":1,\"ReplacementContent\":\"import React, { useState, useCallback, useEffect, useRef } from 'react';\",\"StartLine\":1,\"TargetContent\":\"import React, { useState, useCallback } from 'react';\"},{\"AllowMultiple\":false,\"EndLine\":176,\n<truncated 6069 bytes>"
+
+=== STEP 532 ===
+"\"  const handleDataLoad = (newData, message) => {\\n    try {\\n      const fields = newData._fields\\n        ? [...newData._fields]\\n        : (newData.length > 0 ? Object.keys(newData[0]) : []);\\n      if (newData._fields) delete newData._fields;\\n\\n      \n<truncated 1164 bytes>"
+
+=== STEP 663 ===
+"\"  // Snippet library\\n  const [showSnippets, setShowSnippets] = useState(false);\\n\\n  // Active pipeline tab (A or B)\\n  const [activePipeline, setActivePipeline] = useState('A');\\n\\n  // Column mapping\\n  const [targetColumn, setTargetColumn] = useState(\n<truncated 6855 bytes>"
+
+=== STEP 676 ===
+"\"\""
+
+=== STEP 762 ===
+"\"  const handleSnippetInsert = (code) => {\\n    const updated = [...pipelineA];\\n    if (updated.length > 0) updated[updated.length - 1] = { ...updated[updated.length - 1], code };\\n    setPipelineA(updated);\\n    addLog(\\\"Snippet inserted.\\\");\\n  };\\n\\n  \n<truncated 3090 bytes>"
